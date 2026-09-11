@@ -6,8 +6,16 @@
 /*   By: jcole <jcole@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/10 16:07:10 by jcole             #+#    #+#             */
-/*   Updated: 2026/09/10 16:21:37 by jcole            ###   ########.fr       */
+/*   Updated: 2026/09/11 17:34:38 by jcole            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
+
+int	ft_print_ptr(unsigned long int n)
+{
+	int	count;
+
+	count = 0;
+	return (count);
+}
