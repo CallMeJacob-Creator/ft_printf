@@ -1,8 +1,17 @@
 *This project has been created as part of the 42 curriculum by jcole*
 
 **Description:**
-This library recreates the standard libc library. As well as some extra functions that are not a part of libc.
-The library contains the following functions
+This library recreates the printf function. When you pass a letter from "c" "s" "p" "x" "X" "u" "d" "i" as well as arugments following it will place in the string the corresponding variables.
+
+It is prototyped as ft_printf("", args)
+
+Example:
+ft_printf("Int: %i, Str: %s, Char %c", 100, "Hello World!, A);
+
+Output:
+Int: 100, Str: Hello World!, Char: A
+
+The git contains the following files & folders.
 
 **ft_print_char.c | ft_print_hex.c | ft_print_int.c | ft_print_ptr.c | ft_print_str.c | ft_print_unsigned.c | ft_printf.c | ft_printf.h | Makefile**
 
