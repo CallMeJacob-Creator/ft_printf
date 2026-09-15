@@ -1,0 +1,30 @@
+# Compiled object files
+*.o
+
+# Compiled static library
+*.a
+
+# Compiled dynamic library (just in case)
+*.so
+*.dylib
+
+# Executables / test binaries
+a.out
+*.out
+test
+tester
+
+# Editor/IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# macOS
+.DS_Store
+
+# Linux
+*~
+
+# Valgrind output logs (if you save them to files)
+*.log

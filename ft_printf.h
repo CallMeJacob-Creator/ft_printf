@@ -6,7 +6,7 @@
 /*   By: jcole <jcole@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/10 15:17:03 by jcole             #+#    #+#             */
-/*   Updated: 2026/09/11 16:57:46 by jcole            ###   ########.fr       */
+/*   Updated: 2026/09/15 13:58:06 by jcole            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ int	ft_print_int(int n);
 
 int	ft_print_hex(unsigned int n, int v);
 
-int	ft_print_ptr(unsigned long int n);
+int	ft_print_ptr(void *n);
 
 int	ft_print_unsigned(unsigned int n);
 

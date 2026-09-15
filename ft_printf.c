@@ -6,7 +6,7 @@
 /*   By: jcole <jcole@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/10 15:16:27 by jcole             #+#    #+#             */
-/*   Updated: 2026/09/11 17:26:15 by jcole            ###   ########.fr       */
+/*   Updated: 2026/09/15 13:49:06 by jcole            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ int	ft_argprint(int symb, va_list args)
 	else if (symb == 's')
 		count += ft_print_str(va_arg(args, const char *));
 	else if (symb == 'p')
-		count += ft_print_ptr((unsigned long int)va_arg(args, void *));
+		count += ft_print_ptr(va_arg(args, void *));
 	else if (symb == 'd' || symb == 'i')
 		count += ft_print_int(va_arg(args, int));
 	else if (symb == 'u')
@@ -49,8 +49,11 @@ int	ft_walkthrough(const char *str, va_list args)
 	{
 		if (str[i] == '%')
 		{
-			count += ft_argprint(str[i + 1], args);
+			i++;
+			count += ft_argprint(str[i], args);
 		}
+		else
+			count += ft_write_char(str[i]);
 		i++;
 	}
 	return (count);
