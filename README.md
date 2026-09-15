@@ -6,7 +6,7 @@ This library recreates the printf function. When you pass a letter from "c" "s" 
 It is prototyped as ft_printf("", args)
 
 Example:
-ft_printf("Int: %i, Str: %s, Char %c", 100, "Hello World!, A);
+ft_printf("Int: %i, Str: %s, Char %c", 100, "Hello World!", A);
 
 Output:
 Int: 100, Str: Hello World!, Char: A
